@@ -1,0 +1,58 @@
+{
+  "color": {
+    "$type": "color",
+    "white": { "$value": "#FFFFFF", "$description": "Slate 0 in Figma." },
+    "violet": {
+      "$description": "Primary: actions, focus, selected.",
+      "50": { "$value": "#F5F3FF" },
+      "100": { "$value": "#E9D5FF" },
+      "300": { "$value": "#C4B5FD" },
+      "500": { "$value": "#8B5CF6" },
+      "600": { "$value": "#6D28D9", "$description": "Base." },
+      "700": { "$value": "#4C1D95" },
+      "900": { "$value": "#312E81" }
+    },
+    "slate": {
+      "$description": "Neutral: text, borders, surfaces.",
+      "50": { "$value": "#F8FAFC" },
+      "100": { "$value": "#F1F5F9" },
+      "200": { "$value": "#E2E8F0" },
+      "300": { "$value": "#CBD5E1", "$description": "Not in the Figma palette; used there for input, checkbox and secondary button borders." },
+      "400": { "$value": "#94A3B8" },
+      "500": { "$value": "#64748B", "$description": "Not in the Figma palette; used there for helper text and placeholders." },
+      "600": { "$value": "#475569" },
+      "900": { "$value": "#0F172A" }
+    },
+    "green": {
+      "$description": "Success: positive, complete.",
+      "50": { "$value": "#F0FDF4" },
+      "200": { "$value": "#BBF7D0" },
+      "600": { "$value": "#16A34A", "$description": "Base." },
+      "700": { "$value": "#15803D", "$description": "Added: lightest step that passes WCAG AA as text on white and green 50." },
+      "800": { "$value": "#166534" }
+    },
+    "amber": {
+      "$description": "Warning: caution, attention.",
+      "50": { "$value": "#FFFBEB" },
+      "200": { "$value": "#FDE68A" },
+      "600": { "$value": "#D97706", "$description": "Base." },
+      "700": { "$value": "#B45309", "$description": "Added: lightest step that passes WCAG AA as text on white and amber 50." },
+      "800": { "$value": "#92400E" }
+    },
+    "red": {
+      "$description": "Danger: errors, destructive.",
+      "50": { "$value": "#FEF2F2" },
+      "200": { "$value": "#FECACA" },
+      "600": { "$value": "#DC2626", "$description": "Base." },
+      "700": { "$value": "#B91C1C", "$description": "Not in the Figma palette; used there for the destructive button hover." },
+      "800": { "$value": "#991B1B" }
+    },
+    "blue": {
+      "$description": "Info: informational states only. Missing from the Figma palette but used by the informative badge and callouts.",
+      "50": { "$value": "#EFF6FF" },
+      "100": { "$value": "#DBEAFE" },
+      "600": { "$value": "#2563EB", "$description": "Base." },
+      "700": { "$value": "#1D4ED8", "$description": "Added: text on light surfaces, matching the other status colors." }
+    }
+  }
+}

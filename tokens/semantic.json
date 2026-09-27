@@ -1,0 +1,41 @@
+{
+  "bg": {
+    "$type": "color",
+    "canvas": { "$value": "{color.slate.50}", "$description": "Page background." },
+    "surface": { "$value": "{color.white}", "$description": "Cards, inputs, secondary buttons." },
+    "subtle": { "$value": "{color.slate.50}", "$description": "Hover on surfaces, read-only fields, icon wells." },
+    "muted": { "$value": "{color.slate.100}", "$description": "Neutral badges." },
+    "primary": { "$value": "{color.violet.600}" },
+    "primary-hover": { "$value": "{color.violet.700}" },
+    "primary-subtle": { "$value": "{color.violet.50}", "$description": "Ghost button hover, icon chips." },
+    "danger": { "$value": "{color.red.600}" },
+    "danger-hover": { "$value": "{color.red.700}" },
+    "danger-subtle": { "$value": "{color.red.50}" },
+    "success": { "$value": "{color.green.600}", "$description": "Status dots." },
+    "success-subtle": { "$value": "{color.green.50}" },
+    "warning": { "$value": "{color.amber.600}", "$description": "Status dots." },
+    "warning-subtle": { "$value": "{color.amber.50}" },
+    "info": { "$value": "{color.blue.600}", "$description": "Status dots." },
+    "info-subtle": { "$value": "{color.blue.50}" }
+  },
+  "text": {
+    "$type": "color",
+    "default": { "$value": "{color.slate.900}" },
+    "muted": { "$value": "{color.slate.600}", "$description": "Secondary copy and descriptions." },
+    "subtle": { "$value": "{color.slate.500}", "$description": "Helper text, placeholders, metadata." },
+    "disabled": { "$value": "{color.slate.400}" },
+    "inverse": { "$value": "{color.white}", "$description": "Text on primary and danger fills." },
+    "primary": { "$value": "{color.violet.600}", "$description": "Ghost buttons and links." },
+    "danger": { "$value": "{color.red.700}" },
+    "success": { "$value": "{color.green.700}" },
+    "warning": { "$value": "{color.amber.700}" },
+    "info": { "$value": "{color.blue.700}" }
+  },
+  "border": {
+    "$type": "color",
+    "default": { "$value": "{color.slate.200}", "$description": "Cards and dividers." },
+    "control": { "$value": "{color.slate.300}", "$description": "Inputs, checkboxes, secondary buttons." },
+    "focus": { "$value": "{color.violet.600}" },
+    "danger": { "$value": "{color.red.600}" }
+  }
+}

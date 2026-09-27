@@ -1,0 +1,134 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme static {
+  /* Drop Tailwind's default palette and scales so only Northstar tokens exist. */
+  --color-*: initial;
+  --text-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+
+  --color-white: #FFFFFF; /** Slate 0 in Figma. */
+  --color-violet-50: #F5F3FF;
+  --color-violet-100: #E9D5FF;
+  --color-violet-300: #C4B5FD;
+  --color-violet-500: #8B5CF6;
+  --color-violet-600: #6D28D9; /** Base. */
+  --color-violet-700: #4C1D95;
+  --color-violet-900: #312E81;
+  --color-slate-50: #F8FAFC;
+  --color-slate-100: #F1F5F9;
+  --color-slate-200: #E2E8F0;
+  --color-slate-300: #CBD5E1; /** Not in the Figma palette; used there for input, checkbox and secondary button borders. */
+  --color-slate-400: #94A3B8;
+  --color-slate-500: #64748B; /** Not in the Figma palette; used there for helper text and placeholders. */
+  --color-slate-600: #475569;
+  --color-slate-900: #0F172A;
+  --color-green-50: #F0FDF4;
+  --color-green-200: #BBF7D0;
+  --color-green-600: #16A34A; /** Base. */
+  --color-green-700: #15803D; /** Added: lightest step that passes WCAG AA as text on white and green 50. */
+  --color-green-800: #166534;
+  --color-amber-50: #FFFBEB;
+  --color-amber-200: #FDE68A;
+  --color-amber-600: #D97706; /** Base. */
+  --color-amber-700: #B45309; /** Added: lightest step that passes WCAG AA as text on white and amber 50. */
+  --color-amber-800: #92400E;
+  --color-red-50: #FEF2F2;
+  --color-red-200: #FECACA;
+  --color-red-600: #DC2626; /** Base. */
+  --color-red-700: #B91C1C; /** Not in the Figma palette; used there for the destructive button hover. */
+  --color-red-800: #991B1B;
+  --color-blue-50: #EFF6FF;
+  --color-blue-100: #DBEAFE;
+  --color-blue-600: #2563EB; /** Base. */
+  --color-blue-700: #1D4ED8; /** Added: text on light surfaces, matching the other status colors. */
+  --font-sans: 'Inter Variable', Inter, system-ui, sans-serif;
+  --font-mono: 'Roboto Mono Variable', 'Roboto Mono', ui-monospace, monospace;
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --radius-none: 0px;
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px; /** Added: pills and avatars use it in Figma but it is missing from the radius scale. */
+  --shadow-xs: 0px 1px 2px 0px rgba(15, 23, 42, 0.05); /** Controls. */
+  --shadow-sm: 0px 2px 6px 0px rgba(15, 23, 42, 0.07); /** Menus. */
+  --shadow-md: 0px 8px 20px 0px rgba(15, 23, 42, 0.08); /** Cards. */
+  --shadow-lg: 0px 16px 40px 0px rgba(15, 23, 42, 0.1); /** Dialogs. */
+  --text-display: 44px;
+  --text-display--line-height: 48px;
+  --text-display--font-weight: 700;
+  --text-display--letter-spacing: 0px;
+  --text-heading-1: 32px;
+  --text-heading-1--line-height: 40px;
+  --text-heading-1--font-weight: 700;
+  --text-heading-1--letter-spacing: 0px;
+  --text-heading-2: 24px;
+  --text-heading-2--line-height: 32px;
+  --text-heading-2--font-weight: 650;
+  --text-heading-2--letter-spacing: 0px;
+  --text-heading-3: 18px;
+  --text-heading-3--line-height: 26px;
+  --text-heading-3--font-weight: 650;
+  --text-heading-3--letter-spacing: 0px;
+  --text-body-default: 15px;
+  --text-body-default--line-height: 24px;
+  --text-body-default--font-weight: 400;
+  --text-body-default--letter-spacing: 0px;
+  --text-body-small: 13px;
+  --text-body-small--line-height: 20px;
+  --text-body-small--font-weight: 400;
+  --text-body-small--letter-spacing: 0px;
+  --text-label: 12px;
+  --text-label--line-height: 16px;
+  --text-label--font-weight: 650;
+  --text-label--letter-spacing: 0px;
+  --text-caption: 11px; /** Added: 11px text is used in Figma for badges and helper text but missing from the type scale. */
+  --text-caption--line-height: 16px;
+  --text-caption--font-weight: 400;
+  --text-caption--letter-spacing: 0px;
+  --background-color-canvas: var(--color-slate-50); /** Page background. */
+  --background-color-surface: var(--color-white); /** Cards, inputs, secondary buttons. */
+  --background-color-subtle: var(--color-slate-50); /** Hover on surfaces, read-only fields, icon wells. */
+  --background-color-muted: var(--color-slate-100); /** Neutral badges. */
+  --background-color-primary: var(--color-violet-600);
+  --background-color-primary-hover: var(--color-violet-700);
+  --background-color-primary-subtle: var(--color-violet-50); /** Ghost button hover, icon chips. */
+  --background-color-danger: var(--color-red-600);
+  --background-color-danger-hover: var(--color-red-700);
+  --background-color-danger-subtle: var(--color-red-50);
+  --background-color-success: var(--color-green-600); /** Status dots. */
+  --background-color-success-subtle: var(--color-green-50);
+  --background-color-warning: var(--color-amber-600); /** Status dots. */
+  --background-color-warning-subtle: var(--color-amber-50);
+  --background-color-info: var(--color-blue-600); /** Status dots. */
+  --background-color-info-subtle: var(--color-blue-50);
+  --text-color-default: var(--color-slate-900);
+  --text-color-muted: var(--color-slate-600); /** Secondary copy and descriptions. */
+  --text-color-subtle: var(--color-slate-500); /** Helper text, placeholders, metadata. */
+  --text-color-disabled: var(--color-slate-400);
+  --text-color-inverse: var(--color-white); /** Text on primary and danger fills. */
+  --text-color-primary: var(--color-violet-600); /** Ghost buttons and links. */
+  --text-color-danger: var(--color-red-700);
+  --text-color-success: var(--color-green-700);
+  --text-color-warning: var(--color-amber-700);
+  --text-color-info: var(--color-blue-700);
+  --border-color-default: var(--color-slate-200); /** Cards and dividers. */
+  --border-color-control: var(--color-slate-300); /** Inputs, checkboxes, secondary buttons. */
+  --border-color-focus: var(--color-violet-600);
+  --border-color-danger: var(--color-red-600);
+
+  /* Base unit for sizing utilities: h-10 = 40px, size-4.5 = 18px. */
+  --spacing: var(--spacing-1);
+}

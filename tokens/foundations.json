@@ -1,0 +1,83 @@
+{
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "sans": { "$value": ["Inter Variable", "Inter", "system-ui", "sans-serif"] },
+      "mono": { "$value": ["Roboto Mono Variable", "Roboto Mono", "ui-monospace", "monospace"] }
+    }
+  },
+  "typography": {
+    "$type": "typography",
+    "display": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "44px", "lineHeight": "48px", "fontWeight": 700, "letterSpacing": "0px" }
+    },
+    "heading": {
+      "1": {
+        "$value": { "fontFamily": "{font.family.sans}", "fontSize": "32px", "lineHeight": "40px", "fontWeight": 700, "letterSpacing": "0px" }
+      },
+      "2": {
+        "$value": { "fontFamily": "{font.family.sans}", "fontSize": "24px", "lineHeight": "32px", "fontWeight": 650, "letterSpacing": "0px" }
+      },
+      "3": {
+        "$value": { "fontFamily": "{font.family.sans}", "fontSize": "18px", "lineHeight": "26px", "fontWeight": 650, "letterSpacing": "0px" }
+      }
+    },
+    "body": {
+      "default": {
+        "$value": { "fontFamily": "{font.family.sans}", "fontSize": "15px", "lineHeight": "24px", "fontWeight": 400, "letterSpacing": "0px" }
+      },
+      "small": {
+        "$value": { "fontFamily": "{font.family.sans}", "fontSize": "13px", "lineHeight": "20px", "fontWeight": 400, "letterSpacing": "0px" }
+      }
+    },
+    "label": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "12px", "lineHeight": "16px", "fontWeight": 650, "letterSpacing": "0px" }
+    },
+    "caption": {
+      "$description": "Added: 11px text is used in Figma for badges and helper text but missing from the type scale.",
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "11px", "lineHeight": "16px", "fontWeight": 400, "letterSpacing": "0px" }
+    }
+  },
+  "space": {
+    "$type": "dimension",
+    "$description": "4px base.",
+    "0": { "$value": "0px" },
+    "1": { "$value": "4px" },
+    "2": { "$value": "8px" },
+    "3": { "$value": "12px" },
+    "4": { "$value": "16px" },
+    "6": { "$value": "24px" },
+    "8": { "$value": "32px" },
+    "12": { "$value": "48px" },
+    "16": { "$value": "64px" }
+  },
+  "radius": {
+    "$type": "dimension",
+    "none": { "$value": "0px" },
+    "xs": { "$value": "4px" },
+    "sm": { "$value": "6px" },
+    "md": { "$value": "8px" },
+    "lg": { "$value": "12px" },
+    "xl": { "$value": "16px" },
+    "full": { "$value": "9999px", "$description": "Added: pills and avatars use it in Figma but it is missing from the radius scale." }
+  },
+  "shadow": {
+    "$type": "shadow",
+    "xs": {
+      "$description": "Controls.",
+      "$value": { "offsetX": "0px", "offsetY": "1px", "blur": "2px", "spread": "0px", "color": "rgba(15, 23, 42, 0.05)" }
+    },
+    "sm": {
+      "$description": "Menus.",
+      "$value": { "offsetX": "0px", "offsetY": "2px", "blur": "6px", "spread": "0px", "color": "rgba(15, 23, 42, 0.07)" }
+    },
+    "md": {
+      "$description": "Cards.",
+      "$value": { "offsetX": "0px", "offsetY": "8px", "blur": "20px", "spread": "0px", "color": "rgba(15, 23, 42, 0.08)" }
+    },
+    "lg": {
+      "$description": "Dialogs.",
+      "$value": { "offsetX": "0px", "offsetY": "16px", "blur": "40px", "spread": "0px", "color": "rgba(15, 23, 42, 0.1)" }
+    }
+  }
+}

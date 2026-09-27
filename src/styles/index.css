@@ -1,0 +1,26 @@
+/* Northstar styles: Tailwind, fonts and design tokens. Import this once in any app or story. */
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/roboto-mono";
+@import "./tokens.css";
+
+@layer base {
+  /* Tailwind v4 borders default to currentColor; use the Northstar border color instead. */
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--border-color-default);
+  }
+
+  body {
+    background-color: var(--background-color-canvas);
+    color: var(--text-color-default);
+    font-family: var(--font-sans);
+    font-size: var(--text-body-default);
+    line-height: var(--text-body-default--line-height);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
