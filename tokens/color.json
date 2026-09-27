@@ -3,7 +3,7 @@
     "$type": "color",
     "white": { "$value": "#FFFFFF", "$description": "Slate 0 in Figma." },
     "violet": {
-      "$description": "Primary: actions, focus, selected.",
+      "$description": "Actions, focus, selected.",
       "50": { "$value": "#F5F3FF" },
       "100": { "$value": "#E9D5FF" },
       "300": { "$value": "#C4B5FD" },
@@ -13,7 +13,7 @@
       "900": { "$value": "#312E81" }
     },
     "slate": {
-      "$description": "Neutral: text, borders, surfaces.",
+      "$description": "Text, borders, surfaces.",
       "50": { "$value": "#F8FAFC" },
       "100": { "$value": "#F1F5F9" },
       "200": { "$value": "#E2E8F0" },
@@ -24,7 +24,7 @@
       "900": { "$value": "#0F172A" }
     },
     "green": {
-      "$description": "Success: positive, complete.",
+      "$description": "Positive, complete.",
       "50": { "$value": "#F0FDF4" },
       "200": { "$value": "#BBF7D0" },
       "600": { "$value": "#16A34A", "$description": "Base." },
@@ -32,7 +32,7 @@
       "800": { "$value": "#166534" }
     },
     "amber": {
-      "$description": "Warning: caution, attention.",
+      "$description": "Caution, attention.",
       "50": { "$value": "#FFFBEB" },
       "200": { "$value": "#FDE68A" },
       "600": { "$value": "#D97706", "$description": "Base." },
@@ -40,7 +40,7 @@
       "800": { "$value": "#92400E" }
     },
     "red": {
-      "$description": "Danger: errors, destructive.",
+      "$description": "Errors, destructive.",
       "50": { "$value": "#FEF2F2" },
       "200": { "$value": "#FECACA" },
       "600": { "$value": "#DC2626", "$description": "Base." },
@@ -48,7 +48,7 @@
       "800": { "$value": "#991B1B" }
     },
     "blue": {
-      "$description": "Info: informational states only. Missing from the Figma palette but used by the informative badge and callouts.",
+      "$description": "Informational states only. Not in the Figma palette, but used there by the informative badge and callouts.",
       "50": { "$value": "#EFF6FF" },
       "100": { "$value": "#DBEAFE" },
       "600": { "$value": "#2563EB", "$description": "Base." },

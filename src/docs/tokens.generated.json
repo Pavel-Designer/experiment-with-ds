@@ -1,0 +1,682 @@
+[
+  {
+    "name": "color.white",
+    "cssVar": "--color-white",
+    "type": "color",
+    "value": "#FFFFFF",
+    "description": "Slate 0 in Figma."
+  },
+  {
+    "name": "color.violet.50",
+    "cssVar": "--color-violet-50",
+    "type": "color",
+    "value": "#F5F3FF"
+  },
+  {
+    "name": "color.violet.100",
+    "cssVar": "--color-violet-100",
+    "type": "color",
+    "value": "#E9D5FF"
+  },
+  {
+    "name": "color.violet.300",
+    "cssVar": "--color-violet-300",
+    "type": "color",
+    "value": "#C4B5FD"
+  },
+  {
+    "name": "color.violet.500",
+    "cssVar": "--color-violet-500",
+    "type": "color",
+    "value": "#8B5CF6"
+  },
+  {
+    "name": "color.violet.600",
+    "cssVar": "--color-violet-600",
+    "type": "color",
+    "value": "#6D28D9",
+    "description": "Base."
+  },
+  {
+    "name": "color.violet.700",
+    "cssVar": "--color-violet-700",
+    "type": "color",
+    "value": "#4C1D95"
+  },
+  {
+    "name": "color.violet.900",
+    "cssVar": "--color-violet-900",
+    "type": "color",
+    "value": "#312E81"
+  },
+  {
+    "name": "color.slate.50",
+    "cssVar": "--color-slate-50",
+    "type": "color",
+    "value": "#F8FAFC"
+  },
+  {
+    "name": "color.slate.100",
+    "cssVar": "--color-slate-100",
+    "type": "color",
+    "value": "#F1F5F9"
+  },
+  {
+    "name": "color.slate.200",
+    "cssVar": "--color-slate-200",
+    "type": "color",
+    "value": "#E2E8F0"
+  },
+  {
+    "name": "color.slate.300",
+    "cssVar": "--color-slate-300",
+    "type": "color",
+    "value": "#CBD5E1",
+    "description": "Not in the Figma palette; used there for input, checkbox and secondary button borders."
+  },
+  {
+    "name": "color.slate.400",
+    "cssVar": "--color-slate-400",
+    "type": "color",
+    "value": "#94A3B8"
+  },
+  {
+    "name": "color.slate.500",
+    "cssVar": "--color-slate-500",
+    "type": "color",
+    "value": "#64748B",
+    "description": "Not in the Figma palette; used there for helper text and placeholders."
+  },
+  {
+    "name": "color.slate.600",
+    "cssVar": "--color-slate-600",
+    "type": "color",
+    "value": "#475569"
+  },
+  {
+    "name": "color.slate.900",
+    "cssVar": "--color-slate-900",
+    "type": "color",
+    "value": "#0F172A"
+  },
+  {
+    "name": "color.green.50",
+    "cssVar": "--color-green-50",
+    "type": "color",
+    "value": "#F0FDF4"
+  },
+  {
+    "name": "color.green.200",
+    "cssVar": "--color-green-200",
+    "type": "color",
+    "value": "#BBF7D0"
+  },
+  {
+    "name": "color.green.600",
+    "cssVar": "--color-green-600",
+    "type": "color",
+    "value": "#16A34A",
+    "description": "Base."
+  },
+  {
+    "name": "color.green.700",
+    "cssVar": "--color-green-700",
+    "type": "color",
+    "value": "#15803D",
+    "description": "Added: lightest step that passes WCAG AA as text on white and green 50."
+  },
+  {
+    "name": "color.green.800",
+    "cssVar": "--color-green-800",
+    "type": "color",
+    "value": "#166534"
+  },
+  {
+    "name": "color.amber.50",
+    "cssVar": "--color-amber-50",
+    "type": "color",
+    "value": "#FFFBEB"
+  },
+  {
+    "name": "color.amber.200",
+    "cssVar": "--color-amber-200",
+    "type": "color",
+    "value": "#FDE68A"
+  },
+  {
+    "name": "color.amber.600",
+    "cssVar": "--color-amber-600",
+    "type": "color",
+    "value": "#D97706",
+    "description": "Base."
+  },
+  {
+    "name": "color.amber.700",
+    "cssVar": "--color-amber-700",
+    "type": "color",
+    "value": "#B45309",
+    "description": "Added: lightest step that passes WCAG AA as text on white and amber 50."
+  },
+  {
+    "name": "color.amber.800",
+    "cssVar": "--color-amber-800",
+    "type": "color",
+    "value": "#92400E"
+  },
+  {
+    "name": "color.red.50",
+    "cssVar": "--color-red-50",
+    "type": "color",
+    "value": "#FEF2F2"
+  },
+  {
+    "name": "color.red.200",
+    "cssVar": "--color-red-200",
+    "type": "color",
+    "value": "#FECACA"
+  },
+  {
+    "name": "color.red.600",
+    "cssVar": "--color-red-600",
+    "type": "color",
+    "value": "#DC2626",
+    "description": "Base."
+  },
+  {
+    "name": "color.red.700",
+    "cssVar": "--color-red-700",
+    "type": "color",
+    "value": "#B91C1C",
+    "description": "Not in the Figma palette; used there for the destructive button hover."
+  },
+  {
+    "name": "color.red.800",
+    "cssVar": "--color-red-800",
+    "type": "color",
+    "value": "#991B1B"
+  },
+  {
+    "name": "color.blue.50",
+    "cssVar": "--color-blue-50",
+    "type": "color",
+    "value": "#EFF6FF"
+  },
+  {
+    "name": "color.blue.100",
+    "cssVar": "--color-blue-100",
+    "type": "color",
+    "value": "#DBEAFE"
+  },
+  {
+    "name": "color.blue.600",
+    "cssVar": "--color-blue-600",
+    "type": "color",
+    "value": "#2563EB",
+    "description": "Base."
+  },
+  {
+    "name": "color.blue.700",
+    "cssVar": "--color-blue-700",
+    "type": "color",
+    "value": "#1D4ED8",
+    "description": "Added: text on light surfaces, matching the other status colors."
+  },
+  {
+    "name": "font.family.sans",
+    "cssVar": "--font-sans",
+    "type": "fontFamily",
+    "value": "'Inter Variable', Inter, system-ui, sans-serif"
+  },
+  {
+    "name": "font.family.mono",
+    "cssVar": "--font-mono",
+    "type": "fontFamily",
+    "value": "'Roboto Mono Variable', 'Roboto Mono', ui-monospace, monospace"
+  },
+  {
+    "name": "typography.display",
+    "cssVar": "--text-display",
+    "type": "typography",
+    "value": {
+      "fontFamily": "'Inter Variable', Inter, system-ui, sans-serif",
+      "fontSize": "44px",
+      "lineHeight": "48px",
+      "fontWeight": 700,
+      "letterSpacing": "0px"
+    }
+  },
+  {
+    "name": "typography.heading.1",
+    "cssVar": "--text-heading-1",
+    "type": "typography",
+    "value": {
+      "fontFamily": "'Inter Variable', Inter, system-ui, sans-serif",
+      "fontSize": "32px",
+      "lineHeight": "40px",
+      "fontWeight": 700,
+      "letterSpacing": "0px"
+    }
+  },
+  {
+    "name": "typography.heading.2",
+    "cssVar": "--text-heading-2",
+    "type": "typography",
+    "value": {
+      "fontFamily": "'Inter Variable', Inter, system-ui, sans-serif",
+      "fontSize": "24px",
+      "lineHeight": "32px",
+      "fontWeight": 650,
+      "letterSpacing": "0px"
+    }
+  },
+  {
+    "name": "typography.heading.3",
+    "cssVar": "--text-heading-3",
+    "type": "typography",
+    "value": {
+      "fontFamily": "'Inter Variable', Inter, system-ui, sans-serif",
+      "fontSize": "18px",
+      "lineHeight": "26px",
+      "fontWeight": 650,
+      "letterSpacing": "0px"
+    }
+  },
+  {
+    "name": "typography.body.default",
+    "cssVar": "--text-body-default",
+    "type": "typography",
+    "value": {
+      "fontFamily": "'Inter Variable', Inter, system-ui, sans-serif",
+      "fontSize": "15px",
+      "lineHeight": "24px",
+      "fontWeight": 400,
+      "letterSpacing": "0px"
+    }
+  },
+  {
+    "name": "typography.body.small",
+    "cssVar": "--text-body-small",
+    "type": "typography",
+    "value": {
+      "fontFamily": "'Inter Variable', Inter, system-ui, sans-serif",
+      "fontSize": "13px",
+      "lineHeight": "20px",
+      "fontWeight": 400,
+      "letterSpacing": "0px"
+    }
+  },
+  {
+    "name": "typography.label",
+    "cssVar": "--text-label",
+    "type": "typography",
+    "value": {
+      "fontFamily": "'Inter Variable', Inter, system-ui, sans-serif",
+      "fontSize": "12px",
+      "lineHeight": "16px",
+      "fontWeight": 650,
+      "letterSpacing": "0px"
+    }
+  },
+  {
+    "name": "typography.caption",
+    "cssVar": "--text-caption",
+    "type": "typography",
+    "value": {
+      "fontFamily": "'Inter Variable', Inter, system-ui, sans-serif",
+      "fontSize": "11px",
+      "lineHeight": "16px",
+      "fontWeight": 400,
+      "letterSpacing": "0px"
+    },
+    "description": "Added: 11px text is used in Figma for badges and helper text but missing from the type scale."
+  },
+  {
+    "name": "space.0",
+    "cssVar": "--spacing-0",
+    "type": "dimension",
+    "value": "0px"
+  },
+  {
+    "name": "space.1",
+    "cssVar": "--spacing-1",
+    "type": "dimension",
+    "value": "4px"
+  },
+  {
+    "name": "space.2",
+    "cssVar": "--spacing-2",
+    "type": "dimension",
+    "value": "8px"
+  },
+  {
+    "name": "space.3",
+    "cssVar": "--spacing-3",
+    "type": "dimension",
+    "value": "12px"
+  },
+  {
+    "name": "space.4",
+    "cssVar": "--spacing-4",
+    "type": "dimension",
+    "value": "16px"
+  },
+  {
+    "name": "space.6",
+    "cssVar": "--spacing-6",
+    "type": "dimension",
+    "value": "24px"
+  },
+  {
+    "name": "space.8",
+    "cssVar": "--spacing-8",
+    "type": "dimension",
+    "value": "32px"
+  },
+  {
+    "name": "space.12",
+    "cssVar": "--spacing-12",
+    "type": "dimension",
+    "value": "48px"
+  },
+  {
+    "name": "space.16",
+    "cssVar": "--spacing-16",
+    "type": "dimension",
+    "value": "64px"
+  },
+  {
+    "name": "radius.none",
+    "cssVar": "--radius-none",
+    "type": "dimension",
+    "value": "0px"
+  },
+  {
+    "name": "radius.xs",
+    "cssVar": "--radius-xs",
+    "type": "dimension",
+    "value": "4px"
+  },
+  {
+    "name": "radius.sm",
+    "cssVar": "--radius-sm",
+    "type": "dimension",
+    "value": "6px"
+  },
+  {
+    "name": "radius.md",
+    "cssVar": "--radius-md",
+    "type": "dimension",
+    "value": "8px"
+  },
+  {
+    "name": "radius.lg",
+    "cssVar": "--radius-lg",
+    "type": "dimension",
+    "value": "12px"
+  },
+  {
+    "name": "radius.xl",
+    "cssVar": "--radius-xl",
+    "type": "dimension",
+    "value": "16px"
+  },
+  {
+    "name": "radius.full",
+    "cssVar": "--radius-full",
+    "type": "dimension",
+    "value": "9999px",
+    "description": "Added: pills and avatars use it in Figma but it is missing from the radius scale."
+  },
+  {
+    "name": "shadow.xs",
+    "cssVar": "--shadow-xs",
+    "type": "shadow",
+    "value": "0px 1px 2px 0px rgba(15, 23, 42, 0.05)",
+    "description": "Controls."
+  },
+  {
+    "name": "shadow.sm",
+    "cssVar": "--shadow-sm",
+    "type": "shadow",
+    "value": "0px 2px 6px 0px rgba(15, 23, 42, 0.07)",
+    "description": "Menus."
+  },
+  {
+    "name": "shadow.md",
+    "cssVar": "--shadow-md",
+    "type": "shadow",
+    "value": "0px 8px 20px 0px rgba(15, 23, 42, 0.08)",
+    "description": "Cards."
+  },
+  {
+    "name": "shadow.lg",
+    "cssVar": "--shadow-lg",
+    "type": "shadow",
+    "value": "0px 16px 40px 0px rgba(15, 23, 42, 0.1)",
+    "description": "Dialogs."
+  },
+  {
+    "name": "bg.canvas",
+    "cssVar": "--background-color-canvas",
+    "type": "color",
+    "value": "#F8FAFC",
+    "alias": "color.slate.50",
+    "description": "Page background."
+  },
+  {
+    "name": "bg.surface",
+    "cssVar": "--background-color-surface",
+    "type": "color",
+    "value": "#FFFFFF",
+    "alias": "color.white",
+    "description": "Cards, inputs, secondary buttons."
+  },
+  {
+    "name": "bg.subtle",
+    "cssVar": "--background-color-subtle",
+    "type": "color",
+    "value": "#F8FAFC",
+    "alias": "color.slate.50",
+    "description": "Hover on surfaces, read-only fields, icon wells."
+  },
+  {
+    "name": "bg.muted",
+    "cssVar": "--background-color-muted",
+    "type": "color",
+    "value": "#F1F5F9",
+    "alias": "color.slate.100",
+    "description": "Neutral badges."
+  },
+  {
+    "name": "bg.primary",
+    "cssVar": "--background-color-primary",
+    "type": "color",
+    "value": "#6D28D9",
+    "alias": "color.violet.600"
+  },
+  {
+    "name": "bg.primary-hover",
+    "cssVar": "--background-color-primary-hover",
+    "type": "color",
+    "value": "#4C1D95",
+    "alias": "color.violet.700"
+  },
+  {
+    "name": "bg.primary-subtle",
+    "cssVar": "--background-color-primary-subtle",
+    "type": "color",
+    "value": "#F5F3FF",
+    "alias": "color.violet.50",
+    "description": "Ghost button hover, icon chips."
+  },
+  {
+    "name": "bg.danger",
+    "cssVar": "--background-color-danger",
+    "type": "color",
+    "value": "#DC2626",
+    "alias": "color.red.600"
+  },
+  {
+    "name": "bg.danger-hover",
+    "cssVar": "--background-color-danger-hover",
+    "type": "color",
+    "value": "#B91C1C",
+    "alias": "color.red.700"
+  },
+  {
+    "name": "bg.danger-subtle",
+    "cssVar": "--background-color-danger-subtle",
+    "type": "color",
+    "value": "#FEF2F2",
+    "alias": "color.red.50"
+  },
+  {
+    "name": "bg.success",
+    "cssVar": "--background-color-success",
+    "type": "color",
+    "value": "#16A34A",
+    "alias": "color.green.600",
+    "description": "Status dots."
+  },
+  {
+    "name": "bg.success-subtle",
+    "cssVar": "--background-color-success-subtle",
+    "type": "color",
+    "value": "#F0FDF4",
+    "alias": "color.green.50"
+  },
+  {
+    "name": "bg.warning",
+    "cssVar": "--background-color-warning",
+    "type": "color",
+    "value": "#D97706",
+    "alias": "color.amber.600",
+    "description": "Status dots."
+  },
+  {
+    "name": "bg.warning-subtle",
+    "cssVar": "--background-color-warning-subtle",
+    "type": "color",
+    "value": "#FFFBEB",
+    "alias": "color.amber.50"
+  },
+  {
+    "name": "bg.info",
+    "cssVar": "--background-color-info",
+    "type": "color",
+    "value": "#2563EB",
+    "alias": "color.blue.600",
+    "description": "Status dots."
+  },
+  {
+    "name": "bg.info-subtle",
+    "cssVar": "--background-color-info-subtle",
+    "type": "color",
+    "value": "#EFF6FF",
+    "alias": "color.blue.50"
+  },
+  {
+    "name": "text.default",
+    "cssVar": "--text-color-default",
+    "type": "color",
+    "value": "#0F172A",
+    "alias": "color.slate.900"
+  },
+  {
+    "name": "text.muted",
+    "cssVar": "--text-color-muted",
+    "type": "color",
+    "value": "#475569",
+    "alias": "color.slate.600",
+    "description": "Secondary copy and descriptions."
+  },
+  {
+    "name": "text.subtle",
+    "cssVar": "--text-color-subtle",
+    "type": "color",
+    "value": "#64748B",
+    "alias": "color.slate.500",
+    "description": "Helper text, placeholders, metadata."
+  },
+  {
+    "name": "text.disabled",
+    "cssVar": "--text-color-disabled",
+    "type": "color",
+    "value": "#94A3B8",
+    "alias": "color.slate.400"
+  },
+  {
+    "name": "text.inverse",
+    "cssVar": "--text-color-inverse",
+    "type": "color",
+    "value": "#FFFFFF",
+    "alias": "color.white",
+    "description": "Text on primary and danger fills."
+  },
+  {
+    "name": "text.primary",
+    "cssVar": "--text-color-primary",
+    "type": "color",
+    "value": "#6D28D9",
+    "alias": "color.violet.600",
+    "description": "Ghost buttons and links."
+  },
+  {
+    "name": "text.danger",
+    "cssVar": "--text-color-danger",
+    "type": "color",
+    "value": "#B91C1C",
+    "alias": "color.red.700"
+  },
+  {
+    "name": "text.success",
+    "cssVar": "--text-color-success",
+    "type": "color",
+    "value": "#15803D",
+    "alias": "color.green.700"
+  },
+  {
+    "name": "text.warning",
+    "cssVar": "--text-color-warning",
+    "type": "color",
+    "value": "#B45309",
+    "alias": "color.amber.700"
+  },
+  {
+    "name": "text.info",
+    "cssVar": "--text-color-info",
+    "type": "color",
+    "value": "#1D4ED8",
+    "alias": "color.blue.700"
+  },
+  {
+    "name": "border.default",
+    "cssVar": "--border-color-default",
+    "type": "color",
+    "value": "#E2E8F0",
+    "alias": "color.slate.200",
+    "description": "Cards and dividers."
+  },
+  {
+    "name": "border.control",
+    "cssVar": "--border-color-control",
+    "type": "color",
+    "value": "#CBD5E1",
+    "alias": "color.slate.300",
+    "description": "Inputs, checkboxes, secondary buttons."
+  },
+  {
+    "name": "border.focus",
+    "cssVar": "--border-color-focus",
+    "type": "color",
+    "value": "#6D28D9",
+    "alias": "color.violet.600"
+  },
+  {
+    "name": "border.danger",
+    "cssVar": "--border-color-danger",
+    "type": "color",
+    "value": "#DC2626",
+    "alias": "color.red.600"
+  }
+]

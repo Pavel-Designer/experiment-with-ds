@@ -6,16 +6,18 @@ An experiment: turning the **Northstar** design system from Figma into React com
 
 - [x] 1. Set up the repo
 - [x] 2. Tokens (colors, type, spacing)
-- [ ] 3. Components
-- [ ] 4. Storybook
+- [x] 3. Storybook
+- [ ] 4. Components
 - [ ] 5. Put Storybook online
 
 ## Getting started
 
 ```bash
 npm install
-npm run typecheck
+npm run storybook
 ```
+
+Storybook opens at http://localhost:6006. The Foundations pages (color, typography, spacing, shape and depth) are generated from the tokens.
 
 ## Tokens
 
@@ -25,4 +27,4 @@ The design tokens live in [`tokens/`](tokens) as [W3C design token](https://www.
 - `semantic.json`: what each color is for (`bg`, `text`, `border`)
 - `foundations.json`: type scale, spacing, radius, shadows
 
-After editing them, run `npm run tokens` to regenerate [`src/styles/tokens.css`](src/styles/tokens.css). Every token becomes a Tailwind class, for example `bg-surface`, `text-muted`, `border-control`, `text-heading-1`, `rounded-md` and `shadow-xs`.
+After editing them, run `npm run tokens` to regenerate [`src/styles/tokens.css`](src/styles/tokens.css) and the Storybook docs. Every token becomes a Tailwind class, for example `bg-surface`, `text-muted`, `border-control`, `text-heading-1`, `rounded-md` and `shadow-xs`.

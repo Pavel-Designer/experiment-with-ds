@@ -1,6 +1,8 @@
-// Builds src/styles/tokens.css (a Tailwind v4 @theme block) from the DTCG JSON files in tokens/.
+// Builds from the DTCG JSON files in tokens/:
+// - src/styles/tokens.css: a Tailwind v4 @theme block
+// - src/docs/tokens.generated.json: a flat token list for the Storybook Foundations pages
 import StyleDictionary from 'style-dictionary';
-import { fileHeader, formattedVariables } from 'style-dictionary/utils';
+import { fileHeader, formattedVariables, usesReferences } from 'style-dictionary/utils';
 
 // Semantic groups use Tailwind's per-property namespaces, so `bg.surface`
 // becomes --background-color-surface and generates only the `bg-surface` utility.
@@ -14,9 +16,10 @@ const NAMESPACE = {
   shadow: 'shadow',
 };
 
-// Typography tokens are expanded into sub-tokens, which map onto Tailwind's
+// For Tailwind, typography tokens are expanded into sub-tokens, which map onto its
 // font-size modifiers: text-heading-1 sets size, line height and weight together.
 const TYPE_PROPERTY = {
+  fontFamily: '--font-family',
   fontSize: '',
   lineHeight: '--line-height',
   fontWeight: '--font-weight',
@@ -30,10 +33,31 @@ StyleDictionary.registerTransform({
     const [group, ...rest] = path;
     if (group === 'font') return `font-${rest.slice(1).join('-')}`;
     if (group === 'typography') {
-      const property = rest.pop();
-      return `text-${rest.join('-')}${TYPE_PROPERTY[property] ?? `--${property}`}`;
+      // Expanded sub-tokens end in a property name; whole typography tokens don't.
+      const suffix = TYPE_PROPERTY[rest.at(-1)];
+      return suffix === undefined
+        ? `text-${rest.join('-')}`
+        : `text-${rest.slice(0, -1).join('-')}${suffix}`;
     }
     return `${NAMESPACE[group]}-${rest.join('-')}`;
+  },
+});
+
+StyleDictionary.registerFormat({
+  name: 'json/docs',
+  format: ({ dictionary }) => {
+    const tokens = dictionary.allTokens.map((token) => {
+      const original = token.original.$value;
+      return {
+        name: token.path.join('.'),
+        cssVar: `--${token.name}`,
+        type: token.$type,
+        value: token.$value,
+        alias: typeof original === 'string' && usesReferences(original) ? original.slice(1, -1) : undefined,
+        description: token.$description,
+      };
+    });
+    return `${JSON.stringify(tokens, null, 2)}\n`;
   },
 });
 
@@ -72,9 +96,9 @@ ${variables}
 const sd = new StyleDictionary({
   source: ['tokens/**/*.json'],
   usesDtcg: true,
-  expand: { include: ['typography'] },
   platforms: {
     tailwind: {
+      expand: { include: ['typography'] },
       transforms: ['name/tailwind', 'fontFamily/css', 'shadow/css/shorthand'],
       buildPath: 'src/styles/',
       files: [
@@ -86,6 +110,11 @@ const sd = new StyleDictionary({
           options: { outputReferences: true },
         },
       ],
+    },
+    docs: {
+      transforms: ['name/tailwind', 'fontFamily/css', 'shadow/css/shorthand'],
+      buildPath: 'src/docs/',
+      files: [{ destination: 'tokens.generated.json', format: 'json/docs' }],
     },
   },
 });

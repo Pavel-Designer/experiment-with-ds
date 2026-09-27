@@ -1,0 +1,21 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { ColorRamps, SemanticColors } from './blocks';
+
+<Meta title="Foundations/Color" />
+
+# Color
+
+Use color semantically. Violet signals interaction; blue is reserved for informational states.
+
+## Palette
+
+The raw color ramps. Notes in blue mark values that code adds or uses beyond the Figma palette.
+
+<ColorRamps />
+
+## Semantic colors
+
+What each color is for. Components use these rather than the palette, and each one is a Tailwind class.
+Status text uses the 700 steps so it meets WCAG AA (4.5:1) on white and on its tinted background.
+
+<SemanticColors />

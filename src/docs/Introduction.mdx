@@ -1,0 +1,25 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Introduction" />
+
+# Northstar
+
+Northstar is a design system for product interfaces, built from Figma into React components.
+
+- **Foundations**: color, typography, spacing, and shape and depth. Every page is generated from the design tokens in [`tokens/`](https://github.com/Pavel-Designer/experiment-with-ds/tree/main/tokens), so it always matches the code.
+- **Components**: coming next.
+
+## Using the tokens
+
+Import the styles once. Every token is then available as a Tailwind class:
+
+```tsx
+import './styles/index.css';
+
+<div className="rounded-lg border border-default bg-surface p-6 shadow-xs">
+  <h3 className="text-heading-3">Onboarding refresh</h3>
+  <p className="text-body-small text-muted">12 tasks · Updated 2h ago</p>
+</div>
+```
+
+Tailwind's built-in colors and sizes are switched off, so only Northstar values can be used.
