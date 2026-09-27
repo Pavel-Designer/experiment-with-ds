@@ -9,12 +9,12 @@ An experiment: turning the **Northstar** design system from Figma into React com
 - [x] 1. Set up the repo
 - [x] 2. Tokens (colors, type, spacing)
 - [x] 3. Storybook
-- [ ] 4. Components
+- [x] 4. Components
   - [x] Button
-  - [ ] Text input
-  - [ ] Badge
-  - [ ] Checkbox and Toggle
-  - [ ] Cards
+  - [x] Text input
+  - [x] Badge
+  - [x] Checkbox and Toggle
+  - [x] Cards (project, metric, empty state) and Avatar
 - [x] 5. Put Storybook online
 
 ## Getting started

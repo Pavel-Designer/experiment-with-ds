@@ -53,6 +53,10 @@
       "100": { "$value": "#DBEAFE" },
       "600": { "$value": "#2563EB", "$description": "Base." },
       "700": { "$value": "#1D4ED8", "$description": "Added: text on light surfaces, matching the other status colors." }
+    },
+    "indigo": {
+      "$description": "Decorative only.",
+      "100": { "$value": "#E0E7FF", "$description": "Not in the Figma palette; used there for the project card cover gradient." }
     }
   }
 }

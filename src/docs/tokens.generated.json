@@ -222,6 +222,13 @@
     "description": "Added: text on light surfaces, matching the other status colors."
   },
   {
+    "name": "color.indigo.100",
+    "cssVar": "--color-indigo-100",
+    "type": "color",
+    "value": "#E0E7FF",
+    "description": "Not in the Figma palette; used there for the project card cover gradient."
+  },
+  {
     "name": "font.family.sans",
     "cssVar": "--font-sans",
     "type": "fontFamily",
@@ -316,6 +323,19 @@
       "fontWeight": 650,
       "letterSpacing": "0px"
     }
+  },
+  {
+    "name": "typography.metric",
+    "cssVar": "--text-metric",
+    "type": "typography",
+    "value": {
+      "fontFamily": "'Inter Variable', Inter, system-ui, sans-serif",
+      "fontSize": "36px",
+      "lineHeight": "44px",
+      "fontWeight": 700,
+      "letterSpacing": "0px"
+    },
+    "description": "Added: the metric card value in Figma is 36px, which isn't in the type scale."
   },
   {
     "name": "typography.caption",

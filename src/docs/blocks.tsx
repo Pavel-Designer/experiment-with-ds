@@ -62,6 +62,7 @@ const RAMPS = [
   { key: 'amber', title: 'Warning' },
   { key: 'red', title: 'Danger' },
   { key: 'blue', title: 'Info' },
+  { key: 'indigo', title: 'Decorative' },
 ] as const;
 
 function Swatch({ token }: { token: Token }) {
@@ -171,6 +172,7 @@ const TYPE_SAMPLES: Record<string, string> = {
   'body.default': 'Readable text for everyday product interfaces.',
   'body.small': 'Supporting copy, metadata, and helper text.',
   label: 'Field label',
+  metric: '68.4%',
   caption: 'Badges, helper text and timestamps.',
 };
 

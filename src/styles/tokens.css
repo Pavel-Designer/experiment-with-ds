@@ -44,6 +44,7 @@
   --color-blue-100: #DBEAFE;
   --color-blue-600: #2563EB; /** Base. */
   --color-blue-700: #1D4ED8; /** Added: text on light surfaces, matching the other status colors. */
+  --color-indigo-100: #E0E7FF; /** Not in the Figma palette; used there for the project card cover gradient. */
   --font-sans: 'Inter Variable', Inter, system-ui, sans-serif;
   --font-mono: 'Roboto Mono Variable', 'Roboto Mono', ui-monospace, monospace;
   --spacing-0: 0px;
@@ -94,6 +95,10 @@
   --text-label--line-height: 16px;
   --text-label--font-weight: 650;
   --text-label--letter-spacing: 0px;
+  --text-metric: 36px; /** Added: the metric card value in Figma is 36px, which isn't in the type scale. */
+  --text-metric--line-height: 44px;
+  --text-metric--font-weight: 700;
+  --text-metric--letter-spacing: 0px;
   --text-caption: 11px; /** Added: 11px text is used in Figma for badges and helper text but missing from the type scale. */
   --text-caption--line-height: 16px;
   --text-caption--font-weight: 400;

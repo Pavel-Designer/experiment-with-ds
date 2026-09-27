@@ -62,7 +62,7 @@ export function Button({
       )}
       {...props}
     >
-      {loading ? <LoaderCircle aria-hidden className="motion-safe:animate-spin" /> : icon}
+      {loading ? <LoaderCircle aria-hidden strokeWidth={1.75} className="motion-safe:animate-spin" /> : icon}
       {children}
     </button>
   );
