@@ -13,6 +13,7 @@ const preview: Preview = {
           ['Color', 'Typography', 'Spacing', 'Shape and depth'],
           'Components',
           ['Button', 'Text input', 'Badge', 'Checkbox', 'Toggle', 'Card', 'Avatar'],
+          'Patterns',
         ],
       },
     },

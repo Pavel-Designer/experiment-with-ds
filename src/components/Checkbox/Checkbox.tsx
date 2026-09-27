@@ -7,9 +7,19 @@ export type CheckboxProps = Omit<ComponentPropsWithRef<'input'>, 'type'> & {
   description?: ReactNode;
   /** Shows a dash for a partly selected group. */
   indeterminate?: boolean;
+  /** Hides the label visually but keeps it for screen readers, e.g. in table rows. */
+  hideLabel?: boolean;
 };
 
-export function Checkbox({ label, description, indeterminate = false, className, ref, ...props }: CheckboxProps) {
+export function Checkbox({
+  label,
+  description,
+  indeterminate = false,
+  hideLabel = false,
+  className,
+  ref,
+  ...props
+}: CheckboxProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   useImperativeHandle(ref, () => inputRef.current!);
   // `indeterminate` is a DOM property, not an HTML attribute, so it has to be set in JS.
@@ -21,7 +31,7 @@ export function Checkbox({ label, description, indeterminate = false, className,
     <label
       className={cx('inline-flex items-start gap-3 has-disabled:cursor-not-allowed has-disabled:opacity-55', className)}
     >
-      <span className="relative mt-px flex size-4.5 shrink-0">
+      <span className={cx('relative flex size-4.5 shrink-0', !hideLabel && 'mt-px')}>
         <input
           ref={inputRef}
           type="checkbox"
@@ -44,7 +54,7 @@ export function Checkbox({ label, description, indeterminate = false, className,
           className="pointer-events-none absolute inset-0 m-auto hidden size-3 text-inverse peer-indeterminate:block"
         />
       </span>
-      <span className="flex flex-col gap-0.5">
+      <span className={cx('flex flex-col gap-0.5', hideLabel && 'sr-only')}>
         <span className="text-body-small text-default">{label}</span>
         {description && <span className="text-caption text-subtle">{description}</span>}
       </span>
