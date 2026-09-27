@@ -2,13 +2,15 @@
 
 An experiment: turning the **Northstar** design system from Figma into React components, documented in Storybook.
 
+**Storybook: https://pavel-designer.github.io/experiment-with-ds/** (updates automatically on every push to `main`)
+
 ## Roadmap
 
 - [x] 1. Set up the repo
 - [x] 2. Tokens (colors, type, spacing)
 - [x] 3. Storybook
 - [ ] 4. Components
-- [ ] 5. Put Storybook online
+- [x] 5. Put Storybook online
 
 ## Getting started
 
