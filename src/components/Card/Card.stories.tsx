@@ -72,7 +72,7 @@ export const Empty: Story = { name: 'Empty state', render: () => <div className=
 export const AllCards: Story = {
   parameters: { layout: 'padded' },
   render: () => (
-    <div className="grid w-[1312px] grid-cols-[394px_1fr_1fr] gap-4 [&>*]:h-85.5">
+    <div className="grid w-full max-w-[1312px] grid-cols-[394fr_443fr_443fr] gap-4 [&>*]:h-85.5">
       {project}
       {metric}
       {empty}

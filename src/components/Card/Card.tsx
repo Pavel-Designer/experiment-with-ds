@@ -49,7 +49,7 @@ export function ProjectCard({
       <div className="flex flex-col gap-4 p-6">
         <div className="flex items-start justify-between gap-4">
           <div className="flex min-w-0 flex-col gap-1">
-            <h3 className="truncate text-heading-3 text-default">{title}</h3>
+            <h3 className="text-heading-3 text-default">{title}</h3>
             <p className="text-body-small text-subtle">{meta}</p>
           </div>
           {status && (

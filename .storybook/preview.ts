@@ -7,7 +7,13 @@ const preview: Preview = {
     docs: { theme },
     options: {
       storySort: {
-        order: ['Introduction', 'Foundations', ['Color', 'Typography', 'Spacing', 'Shape and depth'], 'Components'],
+        order: [
+          'Introduction',
+          'Foundations',
+          ['Color', 'Typography', 'Spacing', 'Shape and depth'],
+          'Components',
+          ['Button', 'Text input', 'Badge', 'Checkbox', 'Toggle', 'Card', 'Avatar'],
+        ],
       },
     },
   },
