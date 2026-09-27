@@ -16,6 +16,14 @@ An experiment: turning the **Northstar** design system from Figma into React com
   - [x] Checkbox and Toggle
   - [x] Cards (project, metric, empty state) and Avatar
 - [x] 5. Put Storybook online
+- [x] 6. Patterns (form, table, settings, review) and a marketplace example page
+
+## What's inside
+
+- **Foundations**: color, typography, spacing, shape and depth, generated from the tokens
+- **Components**: Button, Icon button, Text input, Search field, Badge, Chip, Checkbox, Toggle, Segmented control, Card (project, metric, empty state), Media card, Avatar, Stat, Delta
+- **Patterns**: form, table, settings and review, from the Figma file
+- **Examples**: Marketplace, an NFT marketplace home page built only from Northstar components (sample data and generated artwork)
 
 ## Getting started
 

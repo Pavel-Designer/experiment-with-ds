@@ -1,6 +1,6 @@
 // Public entry point: components and tokens are exported from here as they are added.
 export { Avatar, AvatarGroup } from './components/Avatar/Avatar';
-export type { AvatarColor, AvatarGroupProps, AvatarProps } from './components/Avatar/Avatar';
+export type { AvatarColor, AvatarGroupProps, AvatarProps, AvatarSize } from './components/Avatar/Avatar';
 export { Badge } from './components/Badge/Badge';
 export type { BadgeProps, BadgeTone } from './components/Badge/Badge';
 export { Button } from './components/Button/Button';
@@ -9,6 +9,20 @@ export { Card, EmptyState, MetricCard, ProjectCard } from './components/Card/Car
 export type { CardProps, EmptyStateProps, MetricCardProps, ProjectCardProps } from './components/Card/Card';
 export { Checkbox } from './components/Checkbox/Checkbox';
 export type { CheckboxProps } from './components/Checkbox/Checkbox';
+export { Chip } from './components/Chip/Chip';
+export type { ChipProps } from './components/Chip/Chip';
+export { Delta } from './components/Delta/Delta';
+export type { DeltaProps } from './components/Delta/Delta';
+export { IconButton } from './components/IconButton/IconButton';
+export type { IconButtonProps } from './components/IconButton/IconButton';
+export { MediaCard } from './components/MediaCard/MediaCard';
+export type { MediaCardProps } from './components/MediaCard/MediaCard';
+export { SearchField } from './components/SearchField/SearchField';
+export type { SearchFieldProps } from './components/SearchField/SearchField';
+export { SegmentedControl } from './components/SegmentedControl/SegmentedControl';
+export type { SegmentedControlProps } from './components/SegmentedControl/SegmentedControl';
+export { Stat, StatGroup } from './components/Stat/Stat';
+export type { StatGroupProps, StatProps } from './components/Stat/Stat';
 export { Switch } from './components/Switch/Switch';
 export type { SwitchProps } from './components/Switch/Switch';
 export { TextField } from './components/TextField/TextField';

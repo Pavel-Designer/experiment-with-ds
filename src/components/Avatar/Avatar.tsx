@@ -2,13 +2,20 @@ import type { ComponentPropsWithRef } from 'react';
 import { cx } from '../../utils/cx';
 
 export type AvatarColor = 'blue' | 'violet' | 'neutral';
+export type AvatarSize = 'sm' | 'md' | 'lg';
 
 export type AvatarProps = ComponentPropsWithRef<'span'> & {
-  /** One or two letters, or a count like "+3". */
-  initials: string;
+  /** One or two letters, or a count like "+3". Shown when there is no image. */
+  initials?: string;
+  /** Image URL. Falls back to initials. */
+  src?: string;
   /** Full name for screen readers. */
   name?: string;
   color?: AvatarColor;
+  /** 28, 40 or 56px. */
+  size?: AvatarSize;
+  /** Circles for people, squares for collections and projects. */
+  shape?: 'circle' | 'square';
 };
 
 const COLORS: Record<AvatarColor, string> = {
@@ -17,20 +24,42 @@ const COLORS: Record<AvatarColor, string> = {
   neutral: 'bg-subtle',
 };
 
-export function Avatar({ initials, name, color = 'neutral', className, ...props }: AvatarProps) {
+const SIZES: Record<AvatarSize, { box: string; text: string; square: string }> = {
+  sm: { box: 'size-7', text: 'text-caption', square: 'rounded-sm' },
+  md: { box: 'size-10', text: 'text-body-small', square: 'rounded-md' },
+  lg: { box: 'size-14', text: 'text-heading-3', square: 'rounded-lg' },
+};
+
+export function Avatar({
+  initials,
+  src,
+  name,
+  color = 'neutral',
+  size = 'sm',
+  shape = 'circle',
+  className,
+  ...props
+}: AvatarProps) {
+  const sizing = SIZES[size];
   return (
     <span
       role={name ? 'img' : undefined}
       aria-label={name}
       className={cx(
-        'inline-flex size-7 shrink-0 items-center justify-center rounded-full border-2 border-white',
-        'text-caption font-bold text-muted',
+        'inline-flex shrink-0 items-center justify-center overflow-hidden border-2 border-white font-bold text-muted',
+        sizing.box,
+        sizing.text,
+        shape === 'circle' ? 'rounded-full' : sizing.square,
         COLORS[color],
         className,
       )}
       {...props}
     >
-      <span aria-hidden={name ? true : undefined}>{initials}</span>
+      {src ? (
+        <img src={src} alt="" className="size-full object-cover" />
+      ) : (
+        <span aria-hidden={name ? true : undefined}>{initials}</span>
+      )}
     </span>
   );
 }
